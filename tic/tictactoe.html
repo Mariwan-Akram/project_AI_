@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td class="cell" id="0" onmouseenter="fu0()" onmouseout="fu()"></td>
+        <td class="cell" id="1" onmouseenter="fu1()" onmouseout="fu()"></td>
+        <td class="cell" id="2" onmouseenter="fu2()" onmouseout="fu()"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="3" onmouseenter="fu3()" onmouseout="fu()"></td>
+        <td class="cell" id="4" onmouseenter="fu4()" onmouseout="fu()"></td>
+        <td class="cell" id="5" onmouseenter="fu5()" onmouseout="fu()"></td>
+      </tr>
+      <tr>
+        <td class="cell" id="6" onmouseenter="fu6()" onmouseout="fu()"></td>
+        <td class="cell" id="7" onmouseenter="fu7()" onmouseout="fu()"></td>
+        <td class="cell" id="8" onmouseenter="fu8()" onmouseout="fu()"></td>
+      </tr>
+    </table>
+    <div class="endgame">
+      <div class="text"></div>
+      <button
+        class="rep"
+        onClick="startGame()"
+        onmouseenter="fu()"
+        onmouseout="fu2()"
+      >
+        Replay
+      </button>
+    </div>
+    <div class="selectSym">
+      <p>Select symbol:</p>
+      <button onClick="selectSym('X')">X</button>
+      <button onClick="selectSym('O')">O</button>
+    </div>
+
+    <p class="tt" style="display: none">the cell is choosen</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
